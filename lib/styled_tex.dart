@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class StyledTex extends StatelessWidget {
   //const StyledTex(String greeting, {super.key}): myGreeting = greeting;
-  StyledTex(this.myGreeting, {super.key});
+ const StyledTex(this.myGreeting, {super.key});
 
   final String myGreeting;
 
