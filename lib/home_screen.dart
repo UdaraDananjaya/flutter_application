@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             Color.fromARGB(255, 0, 98, 255),
             Color.fromARGB(255, 38, 0, 255),
           ], begin: beginAlignment, end: endAlignment)),
-          child: const StyledTex(),
+          child: StyledTex("Welcomex"),
         ),
       ),
     );

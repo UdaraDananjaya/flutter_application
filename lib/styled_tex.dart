@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-const parameterText = "Welcome";
+//const parameterText = "Welcome";
 
 class StyledTex extends StatelessWidget {
-  const StyledTex({super.key});
+  //const StyledTex(String greeting, {super.key}): myGreeting = greeting;
+  StyledTex(this.myGreeting, {super.key});
+
+  final String myGreeting;
+
   @override
   Widget build(context) {
-    return const Center(
+    return Center(
       child: Text(
-        parameterText,
-        style: TextStyle(color: Colors.white, fontSize: 50),
+        myGreeting,
+        style: const TextStyle(color: Colors.white, fontSize: 50),
       ),
     );
   }
