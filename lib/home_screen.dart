@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application/styled_tex.dart';
 
@@ -10,6 +8,10 @@ const endAlignment = Alignment.bottomLeft;
 class HomeScreen extends StatelessWidget {
   const HomeScreen(this.bgColorX, this.bgColory, {super.key});
   final List<int> bgColorX, bgColory;
+
+  void changeImage() {
+    
+  }
 
   @override
   Widget build(context) {
@@ -24,7 +26,12 @@ class HomeScreen extends StatelessWidget {
             Color.fromARGB(bgColorX[0], bgColorX[1], bgColorX[2], bgColorX[3]),
             Color.fromARGB(bgColory[0], bgColory[1], bgColory[2], bgColory[3]),
           ], begin: beginAlignment, end: endAlignment)),
-          child: const StyledTex("Welcomex"),
+          child: Center(
+            child: Image.asset(
+              "assets/images/images.jpg",
+              width: 150,
+            ),
+          ),
         ),
       ),
     );
